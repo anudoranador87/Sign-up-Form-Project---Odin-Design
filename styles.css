@@ -116,13 +116,32 @@ h3{
 }
 
 input{
-    border-color: #E5E7EB;
+    
+    color:  #16450d;
+    appearance: none;
+    font-family: 'Norse', sans-serif;
+    letter-spacing: 0.1rem;
+    padding: 5px 12px;
+    border-radius:  4px;
+    border: 1px solid #E5E7EB;
+    transition: all 0.3s ease;
 
 }
+input:hover{
+    cursor: pointer;
+}
+input:focus{
+    border-color: blue;
+    box-shadow: 0 0 5px rgba(22, 69, 13, 0.3);
+    transform: translateY(-3px);
+    background-color: #fff;
+    outline: none;
+    
+}
 label {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 700;
+    font-family: 'Norse', sans-serif;
+    font-size: 1.00rem;
+    font-weight: 800;
     letter-spacing: 1px;
     color: #555;
     text-transform: uppercase;
@@ -133,7 +152,7 @@ a{
     margin-left: 5px;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    font-weight: ;
+    font-weight: 700;
     color: #333;
 }
 .button-section{
@@ -158,4 +177,52 @@ button:hover {
     background-color: #4a5a3a; 
     transform: translateY(-3px) scale(1.02); 
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+
+input:user-invalid{
+    border-color: red;
+}
+
+@media (max-width: 768px){
+
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+
+}
+.left-image{
+    max-width: 768px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+
+}
+.logosection{
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
+    background-color: rgba(0, 0, 0, 0.5); 
+    height: 100p
+
+}
+
+h1{
+
+    font-size: 1.1
+
+}
+
+h2{
+
+    font-size: 1.2rem;
+
+}
+
+h3{
+    font-size: 1.0rem;
+
+
+}
 }
